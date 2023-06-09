@@ -3,7 +3,9 @@ if status is-interactive
 end
 
 # envs
-set -x QT_QPA_PLATFORM "wayland;xcb"
+#set -x QT_QPA_PLATFORM "wayland;xcb"
+set -x QT_QPA_PLATFORM "wayland"
+set -x QT_QPA_PLATFORMTHEME "qt6ct"
 set -x QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
 set -x SDL_VIDEODRIVER "wayland"
 set -x GDK_BACKEND "wayland,x11"
