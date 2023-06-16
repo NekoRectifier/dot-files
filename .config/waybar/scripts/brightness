@@ -10,12 +10,12 @@ get_backlight() {
 
 # Increase brightness
 inc_backlight() {
-	brightnessctl -d amdgpu_bl1 set 10%+
+	brightnessctl set 10%+
 }
 f
 # Decrease brightness
 dec_backlight() {
-	brightnessctl -d amdgpu_bl1 set 10%- 
+	brightnessctl set 10%- 
 }
 
 # Execute accordingly

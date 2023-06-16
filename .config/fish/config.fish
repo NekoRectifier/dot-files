@@ -3,18 +3,23 @@ if status is-interactive
 end
 
 # envs
-#set -x QT_QPA_PLATFORM "wayland;xcb"
-set -x QT_QPA_PLATFORM "wayland"
-set -x QT_QPA_PLATFORMTHEME "qt6ct"
-set -x QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
-set -x SDL_VIDEODRIVER "wayland"
-set -x GDK_BACKEND "wayland,x11"
+set -Ux QT_QPA_PLATFORM "wayland;xcb"
+set -Ux QT_QPA_PLATFORMTHEME "qt6ct"
+set -Ux QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+set -Ux SDL_VIDEODRIVER "wayland"
+set -Ux GDK_BACKEND "wayland,x11"
 
-set cuda_path "/home/neko/Documents/seg/env"
+# env for NVIDIA
+#set -x LIBVA_DRIVER_NAME "nvidia"
+#set -x XDG_SESSION_TYPE "wayland"
+#set -x GBM_BACKEND "nvidia-drm"
+#set -x __GLX_VENDOR_LIBRARY_NAME "nvidia"
+#set -x WLR_NO_HARDWARE_CURSORS "1"
 
-set -Ux LD_LIBRARY_PATH $LD_LIBRARY_PATH:$cuda_path/TensorRT-7.1.3.4/lib64:$cuda_path/TensorRT-7.1.3.4/lib
-set -Ux PATH $PATH:/home/neko/.local/bin:$cuda_path/cuda-toolkit/bin:/opt/miniconda/bin
-set -Ux LIBRARY_PATH $LIBRARY_PATH:$cuda_path/cuda-toolkit/lib64
+# cuda
+set -Ux LD_LIBRARY_PATH /opt/tensorRT-8.4.3.1/:/opt/TensorRT-8.4.3.1/lib/:/opt/tensorRT-7.0.0.11/:/opt/TensorRT-7.0.0.11/lib/:/opt/TensorRT-7.1.3.4/lib/:/opt/TensorRT-7.1.3.4/:/opt/cuda/lib64
+set -Ux PATH $PATH:/home/neko/.local/bin:/opt/cuda/bin:/opt/miniconda/bin
+set -Ux LIBRARY_PATH /opt/cuda/lib64
 
 # aliases
 
