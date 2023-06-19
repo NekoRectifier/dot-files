@@ -10,14 +10,15 @@ set -Ux SDL_VIDEODRIVER "wayland"
 set -Ux GDK_BACKEND "wayland,x11"
 
 # env for NVIDIA
-#set -x LIBVA_DRIVER_NAME "nvidia"
-#set -x XDG_SESSION_TYPE "wayland"
-#set -x GBM_BACKEND "nvidia-drm"
-#set -x __GLX_VENDOR_LIBRARY_NAME "nvidia"
-#set -x WLR_NO_HARDWARE_CURSORS "1"
+set -x LIBVA_DRIVER_NAME "nvidia"
+set -x XDG_SESSION_TYPE "wayland"
+set -x GBM_BACKEND "nvidia-drm"
+set -x __GLX_VENDOR_LIBRARY_NAME "nvidia"
+set -x WLR_NO_HARDWARE_CURSORS "1"
 
 # cuda
-set -Ux LD_LIBRARY_PATH /opt/tensorRT-8.4.3.1/:/opt/TensorRT-8.4.3.1/lib/:/opt/tensorRT-7.0.0.11/:/opt/TensorRT-7.0.0.11/lib/:/opt/TensorRT-7.1.3.4/lib/:/opt/TensorRT-7.1.3.4/:/opt/cuda/lib64
+set -Ux LD_LIBRARY_PATH /opt/TensorRT-7.1.3.4/lib/:/opt/TensorRT-7.1.3.4/:/opt/cuda/lib64
+
 set -Ux PATH $PATH:/home/neko/.local/bin:/opt/cuda/bin:/opt/miniconda/bin
 set -Ux LIBRARY_PATH /opt/cuda/lib64
 
