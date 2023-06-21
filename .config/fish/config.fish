@@ -17,7 +17,7 @@ set -x __GLX_VENDOR_LIBRARY_NAME "nvidia"
 set -x WLR_NO_HARDWARE_CURSORS "1"
 
 # cuda
-set -Ux LD_LIBRARY_PATH /opt/TensorRT-7.1.3.4/lib/:/opt/TensorRT-7.1.3.4/:/opt/cuda/lib64
+set -Ux LD_LIBRARY_PATH /opt/TensorRT-8.4.3.1/lib/:/opt/TensorRT-8.4.3.1/:/opt/cuda/lib64
 
 set -Ux PATH $PATH:/home/neko/.local/bin:/opt/cuda/bin:/opt/miniconda/bin
 set -Ux LIBRARY_PATH /opt/cuda/lib64
