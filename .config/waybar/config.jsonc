@@ -8,23 +8,23 @@
     "height": 45,
     "modules-left": ["clock", "cpu", "memory", "wlr/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["network", "temperature", "battery", "backlight", "pulseaudio", "pulseaudio#microphone", "tray"],
+    "modules-right": ["network", "temperature", "pulseaudio", "pulseaudio#microphone", "tray"],
     "include": [],
     
     "cpu": {
-        "interval": 5,
-        "format":"  {usage}%",
+        "interval": 1,
+        "format":" {usage}%",
         "tooltip-format": "Avg freq: {avg_frequency} GHz"
     },
 
     "memory": {
-        "interval": 5,
+        "interval": 1,
         "format":"󰘚 {percentage}%",
         "tooltip-format": "Phyical: {used} Gib; Swap: {swapUsed} Gib"
     },
 
     "hyprland/window": {
-	"max-length": 200,
+	    "max-length": 200,
         "format": "{}",
         "tooltip": false
     },
