@@ -1,2 +1,4 @@
 var:
-  last_build_time: 1687317508
+  last_build_time: 1688346418
+  option:
+    simplification: true

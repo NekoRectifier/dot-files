@@ -16,7 +16,7 @@ switcher:
     - ascii_punct
     - simplification
     - extended_charset
-    - zh_hant
+    #- zh_hant
     - zh_hans
     # - zh_hant_tw
   fold_options: true

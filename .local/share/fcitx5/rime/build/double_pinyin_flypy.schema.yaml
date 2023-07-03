@@ -1,11 +1,11 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1686489720
+    default: 1687595282
     default.custom: 0
     double_pinyin_flypy.custom: 0
-    double_pinyin_flypy.schema: 1686489757
-    punctuation: 1683986601
+    double_pinyin_flypy.schema: 1688346409
+    punctuation: 1687317841
     punctuation.custom: 0
 engine:
   filters:
@@ -178,6 +178,7 @@ switches:
   - name: full_shape
     states: ["半角", "全角"]
   - name: simplification
+    reset: 1
     states: ["漢字", "汉字"]
   - name: ascii_punct
     states: ["。，", "．，"]
