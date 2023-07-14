@@ -16,10 +16,7 @@ function ll
     command exa -al
 end
 
-function ls
-    command exa -g
-end
-
+# how to pass args to origin program ?
 function grep
     command rg --color=auto
 end
@@ -33,3 +30,10 @@ function xhyprland
 
     command Hyprland
 end
+
+# pnpm
+set -gx PNPM_HOME "/home/neko/.local/share/pnpm"
+if not string match -q -- $PNPM_HOME $PATH
+  set -gx PATH "$PNPM_HOME" $PATH
+end
+# pnpm end

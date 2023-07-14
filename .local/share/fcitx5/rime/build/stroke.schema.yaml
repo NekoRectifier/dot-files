@@ -1,12 +1,12 @@
 __build_info:
   rime_version: 1.8.5
   timestamps:
-    default: 1687595282
+    default: 1689248162
     default.custom: 0
-    punctuation: 1687317841
+    punctuation: 1689247954
     punctuation.custom: 0
     stroke.custom: 0
-    stroke.schema: 1687317841
+    stroke.schema: 1688428056
 abc_segmentor:
   extra_tags:
     - reverse_lookup
