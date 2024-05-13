@@ -25,8 +25,6 @@ switcher:
   caption: 「方案选单」
   hotkeys:
     - F4
-    - Control+grave
-    - Control+Shift+grave
     # - Alt+grave
   save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
     - ascii_punct
@@ -56,7 +54,7 @@ switcher:
 ascii_composer:
   good_old_caps_lock: true  # true | false
   switch_key:
-    Caps_Lock: noop     # commit_code | commit_text | clear
+    Caps_Lock: clear     # commit_code | commit_text | clear
     Shift_L: commit_code  # commit_code | commit_text | inline_ascii | clear | noop
     Shift_R: noop         # commit_code | commit_text | inline_ascii | clear | noop
     Control_L: noop       # commit_code | commit_text | inline_ascii | clear | noop
@@ -196,8 +194,8 @@ key_binder:
     # - { when: always, toggle: ascii_mode, accept: Control+Shift+at }            # 切换中英
     - { when: always, toggle: ascii_punct, accept: Control+Shift+3 }              # 切换中英标点
     - { when: always, toggle: ascii_punct, accept: Control+Shift+numbersign }     # 切换中英标点
-    - { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
-    - { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
+    #- { when: always, toggle: traditionalization, accept: Control+Shift+4 }       # 切换简繁
+    #- { when: always, toggle: traditionalization, accept: Control+Shift+dollar }  # 切换简繁
     # - { when: always, toggle: full_shape, accept: Control+Shift+5 }             # 切换全半角
     # - { when: always, toggle: full_shape, accept: Control+Shift+percent }       # 切换全半角
 
